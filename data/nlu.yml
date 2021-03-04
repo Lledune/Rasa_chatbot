@@ -54,7 +54,7 @@ nlu:
   examples: |
     - i would like to buy coffee
     - do you sell some coffee
-    - i wish for some [coffee](coffee)
+    - i wish for some [espresso](coffee)
     - do you sell normal coffee
     - what do you sell 
     - i want coffee
@@ -75,13 +75,15 @@ nlu:
   examples: |
     - [Americano](coffee)
     - [Capuccino](coffee)
-    - [Coffee](coffee)
+    - [Espresso](coffee)
     - [americano](coffee)
     - [cappucino](coffee)
-    - i want a [coffee](coffee)
+    - i want a [espresso](coffee)
     - please give me an [americano](coffee)
     - i choose [cappucino](coffee)
     - i want a [cappucino](coffee)
+    - i want [cappucino](coffee)
+    - i want [americano](coffee)
 
 - intent: mood_great
   examples: |
