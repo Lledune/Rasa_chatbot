@@ -1,0 +1,72 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: order_coffee_good
+  steps: 
+  - intent: greet 
+  - action: utter_greet
+  - intent: get_coffee
+  - action: action_coffee_list
+  - action: utter_get_coffee_type
+  - intent: give_type_coffee
+    entities:
+    - coffee: "cappucino"
+  - action: utter_get_email
+  - intent: give_email
+    entities:
+    - email: "lucien.ledune.ds@gmail.com"
+  - action: utter_print_email
+  - action: action_coffee_mail
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_goodbye
+
+- story: order_coffee_good
+  steps: 
+  - intent: greet 
+  - action: utter_greet
+  - intent: get_coffee
+  - action: action_coffee_list
+  - action: utter_get_coffee_type
+  - intent: give_type_coffee
+    entities:
+    - coffee: "cappucino"
+  - action: utter_get_email
+  - intent: give_email
+    entities:
+    - email: "lucien.ledune.ds@gmail.com"
+  - action: utter_print_email
+  - action: action_coffee_mail
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_cheer_up
+  - action: utter_goodbye
