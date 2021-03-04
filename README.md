@@ -5,3 +5,4 @@ This is a bot for placing coffee order.
 It can sell americano, cappucino or normal coffee. 
 It will take your order, ask for email and send an email to your address (which represents the coffee)
 
+Demo here : https://www.youtube.com/watch?v=xsxTN2ABjO4
