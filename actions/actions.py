@@ -42,7 +42,7 @@ class ActionSendCoffeeEmail(Action):
         coffee = tracker.get_slot("coffee")
 
         #SEND EMAIL 
-        sg = sendgrid.SendGridAPIClient(api_key='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') #Free api key, purposely not hidden.
+        sg = sendgrid.SendGridAPIClient(api_key='API KEY !') #Free api key from sendgrid.
         from_email = Email("lucien.ledune.ds@gmail.com")  # Change to your verified sender
         to_email = To(email)  # Change to your recipient
         subject = "Your coffee order"
