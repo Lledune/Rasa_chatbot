@@ -7,6 +7,10 @@ It will take your order, ask for email and send an email to your address (which 
 
 Demo here : https://www.youtube.com/watch?v=xsxTN2ABjO4
 
+If you want the email to be sent, you need to edit the lines in actions.py, under "#SEND EMAIL" with your own API KEY and user email. 
+
+The key can be obtained for free on sendgrid website. 
+
 # Running instructions : 
 
 - Make sure docker is installed 
