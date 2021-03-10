@@ -7,6 +7,8 @@ It will take your order, ask for email and send an email to your address (which 
 
 Demo here : https://www.youtube.com/watch?v=xsxTN2ABjO4
 
+(It isn't shown in the video but an email with the coffee name is sent at the end of the dialog).
+
 If you want the email to be sent, you need to edit the lines in actions.py, under "#SEND EMAIL" with your own API KEY and user email. 
 
 The key can be obtained for free on sendgrid website. 
